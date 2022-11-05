@@ -82,14 +82,14 @@ function verification() {
 function checkWin() {
   let activeBoxs = document.querySelectorAll(".memory .box.active");
   if (activeBoxs.length == 20) {
+    setTimeout(() => document.querySelector("#win").play(), 1000);
     setTimeout(() => {
       start.style.display = "block";
       win.style.display = "block";
       winH2.innerHTML = `Tries: ${nbrTries}`;
-
       boxs.forEach((box) => {
         box.classList.remove("active");
       });
-    }, 1000);
+    }, 2000);
   }
 }
