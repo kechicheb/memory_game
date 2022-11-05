@@ -16,18 +16,33 @@ body {
   z-index: 2;
   background-color: rgba(3, 169, 244, 0.9);
 }
-.start span {
+.start .content {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+.start span {
   background-color: #f44336;
   color: #fff;
   padding: 15px 25px;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   border-radius: 6px;
   cursor: pointer;
+}
+.start .win {
+  color: white;
+  display: none;
+}
+.start .win h1 {
+  font-size: 50px;
+  margin-bottom: -15px;
+}
+.start .win h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .memory {
